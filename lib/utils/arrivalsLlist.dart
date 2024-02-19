@@ -35,19 +35,22 @@ Widget arrivalcontainers(String path, int price, String name) {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-            height: 308,
+            height: 288,
             width: 329,
             alignment: Alignment.center,
             decoration: BoxDecoration(
               color: Color(0xfff5f5f5),
             ),
-            child: Image.asset(path)),
+            child: Image.asset(
+              path,
+              fit: BoxFit.cover,
+            )),
         SizedBox(
           height: 10,
         ),
         Text(
           name,
-          style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w500),
+          style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w600),
         ),
         SizedBox(
           height: 10,

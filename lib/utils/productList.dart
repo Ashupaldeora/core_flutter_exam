@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-List products1 = [
+List products = [
   {
     'image': 'assets/arrivals-images/Rectangle 19.png',
     'name': 'Jordan Delta 2',
@@ -8,46 +8,42 @@ List products1 = [
   },
   {
     'image': 'assets/arrivals-images/Rectangle 24.png',
-    'name': 'Jordan Delta 2',
+    'name': 'Nike Air Jordan XT',
     'price': 35000
   },
   {
     'image': 'assets/arrivals-images/Rectangle 25.png',
-    'name': 'Jordan Delta 2',
+    'name': 'RS-X-INTL Game',
     'price': 20000
   },
-];
-List products2 = [
   {
     'image': 'assets/arrivals-images/Rectangle 26.png',
-    'name': 'Jordan Delta 2',
+    'name': 'Suede Classic',
     'price': 25000
   },
   {
     'image': 'assets/arrivals-images/Rectangle 29.png',
-    'name': 'Jordan Delta 2',
+    'name': 'NMD 1 Refined',
     'price': 30000
   },
   {
     'image': 'assets/arrivals-images/Rectangle 36.png',
-    'name': 'Jordan Delta 2',
+    'name': 'Superstar Classic',
     'price': 60000
   },
-];
-List products3 = [
   {
     'image': 'assets/arrivals-images/Rectangle 38.png',
-    'name': 'Jordan Delta 2',
+    'name': 'Adiddas Beluga',
     'price': 50000
   },
   {
     'image': 'assets/arrivals-images/Rectangle 48.png',
-    'name': 'Jordan Delta 2',
+    'name': 'Nike Air Jordan XT',
     'price': 40000
   },
   {
     'image': 'assets/arrivals-images/Rectangle 50.png',
-    'name': 'Jordan Delta 2',
+    'name': 'Nike Wobler',
     'price': 90000
   }
 ];

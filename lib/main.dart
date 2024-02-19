@@ -1,5 +1,6 @@
 import 'package:core_flutter_exam/view/screens/arrivalscreen.dart';
 import 'package:core_flutter_exam/view/screens/homescreen.dart';
+import 'package:core_flutter_exam/view/screens/productscreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,10 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
-      initialRoute: '/home',
+      initialRoute: '/product',
       routes: {
         '/home': (context) => homescreen(),
         '/arrival': (context) => arrivalscreen(),
+        '/product': (context) => productscreen(),
       },
     );
   }
