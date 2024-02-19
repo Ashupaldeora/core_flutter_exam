@@ -44,7 +44,7 @@ class _homescreenState extends State<homescreen> {
               child: Row(
                 children: List.generate(
                     arrivals.length,
-                    (index) => arrivalcontainers(arrivals[index]['image'],
+                    (index) => arrivalcontainers1(arrivals[index]['image'],
                         arrivals[index]['price'], arrivals[index]['name'])),
               ),
             ),

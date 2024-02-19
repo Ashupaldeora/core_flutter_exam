@@ -1,3 +1,5 @@
+import 'package:core_flutter_exam/utils/cart.dart';
+import 'package:core_flutter_exam/utils/productList.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +27,11 @@ List arrivals = [
   }
 ];
 
-Widget arrivalcontainers(String path, int price, String name) {
+Widget arrivalcontainers1(
+  String path,
+  int price,
+  String name,
+) {
   return Container(
     margin: EdgeInsets.only(left: 30),
     height: 414,

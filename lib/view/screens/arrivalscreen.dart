@@ -7,6 +7,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../utils/cart.dart';
+
 class arrivalscreen extends StatefulWidget {
   const arrivalscreen({super.key});
 
@@ -211,7 +213,8 @@ class _arrivalscreenState extends State<arrivalscreen> {
                                   ? arrivalcontainers(
                                       products[index]['image'],
                                       products[index]['price'],
-                                      products[index]['name'])
+                                      products[index]['name'],
+                                      index)
                                   : null;
                             },
                           )),
@@ -285,6 +288,55 @@ class _arrivalscreenState extends State<arrivalscreen> {
                 ),
               ],
             ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget arrivalcontainers(String path, int price, String name, int index) {
+    return InkWell(
+      onTap: () {
+        setState(() {
+          productshow[0] = products[index];
+          Navigator.of(context).pushNamed('/product');
+        });
+      },
+      child: Container(
+        margin: EdgeInsets.only(left: 30),
+        height: 414,
+        width: 329,
+        decoration: BoxDecoration(),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+                height: 288,
+                width: 329,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: Color(0xfff5f5f5),
+                ),
+                child: Image.asset(
+                  path,
+                  fit: BoxFit.cover,
+                )),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              name,
+              style: GoogleFonts.poppins(
+                  fontSize: 18, fontWeight: FontWeight.w600),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text('${price}RWF',
+                style: GoogleFonts.poppins(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.grey))
           ],
         ),
       ),

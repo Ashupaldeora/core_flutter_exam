@@ -7,7 +7,9 @@ Widget banner(double width) {
   return Container(
     height: 656,
     width: width,
-    decoration: BoxDecoration(color: Color(0xffFDFBFB)),
+    decoration: BoxDecoration(
+      color: Color(0xffFDFBFB),
+    ),
     child: Stack(children: [
       Row(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -125,7 +127,7 @@ Widget bannercontainers(String imagepath) {
               Color(0xffEFEEF5),
               Color(0xffF3E7E9),
             ]),
-        borderRadius: BorderRadius.circular(20)),
+        borderRadius: BorderRadius.circular(10)),
     child: Image.asset(
       imagepath,
     ),

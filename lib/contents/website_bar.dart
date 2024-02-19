@@ -4,8 +4,11 @@ import 'package:google_fonts/google_fonts.dart';
 
 Widget bar(BuildContext context) {
   return Container(
-    height: 100,
-    color: Color(0xffFDFBFB),
+    height: 90,
+    decoration: BoxDecoration(
+        color: Color(0xffFDFBFB),
+        border:
+            Border(bottom: BorderSide(width: 1, color: Colors.grey.shade700))),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -54,7 +57,9 @@ Widget bar(BuildContext context) {
           child: Row(
             children: [
               IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/cart');
+                  },
                   icon: Image.asset('assets/Icons/fi_shopping-cart.png')),
               SizedBox(
                 width: 10,
